@@ -2708,24 +2708,6 @@ ul.pagination li > a:focus {
 	margin-top: 15px;
 }
 
-.nav-tabs > li:first-child {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 5px 60px 0px 10px;
-    color: #e09200;
-    min-width: 250px;
-    }
-
-.nav-tabs > li:last-child > a {
-	background-color: #ffa500;
-    color: white;
-    }
-
-.nav-tabs > li:last-child > a:hover, a:focus, a:after {
-	background-color: #e09200;
-    color: white;
-    }
-
 
 .nav-tabs > li > a {
 	font-size: 13px;
@@ -2795,12 +2777,24 @@ ul.pagination li > a:focus {
 	height: 100%;
 }
 
+/* Small screens */
+@media (min-width:481px) and (max-width:1280px) {
+    	.nav-tabs > li:first-child {
+        float: none;
+        margin-bottom: 10px;
+	}
+}
+
 /* Small devices (tablets, smartphones) */
-@media (min-width:481px) and (max-width:767px) {
+@media (min-width:481px) and (max-width:1024px) {
 	.nav-tabs > li > a {
 		padding: 12px 10px;
 		font-size: 11px;
 		margin-right: 0;
+	}
+    	.nav-tabs > li:first-child {
+        float: none;
+        margin-bottom: 10px;
 	}
 }
 
