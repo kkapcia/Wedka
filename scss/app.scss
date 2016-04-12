@@ -1,0 +1,9 @@
+@import "Bourbon";
+
+// zmienne
+$maincolor: #ffa500;
+$maindark: darken($maincolor, 7%);
+
+// importowane
+
+@import "nav-tabs"

@@ -1,0 +1,22 @@
+.nav-tabs {
+
+    li:first-child {
+      font-size: 20px;
+      font-weight: 400;
+      padding: 5px 60px 0px 10px;
+      color: $maindark;
+      min-width: 250px;
+    }
+
+    li:last-child {
+      a {
+        background-color: $maincolor;
+        color: white;
+
+        &:hover, &:focus, &:after {
+          background-color: $maindark;
+          color: white;
+        }
+      }
+    }
+}
