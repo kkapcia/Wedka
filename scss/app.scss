@@ -1,9 +1,87 @@
 @import "Bourbon";
 
 // zmienne
+
 $maincolor: #ffa500;
 $maindark: darken($maincolor, 7%);
+$border: lighten(#666666, 40%);
+$fa: #fafafa;
+
+$small: 480px;
+$medium: 800px;
+$large: 1200px;
 
 // importowane
 
-@import "nav-tabs"
+//technology list
+
+ul.technology {
+  list-style: none;
+  border-bottom: 2pt solid;
+  border-color: $border;
+  padding-left: 5px;
+  @media screen and (max-width: $medium) {
+    background-color: $fa;
+    padding-bottom: 40px;
+  }
+
+
+  li {
+    display: inline-block;
+    font-size: 13px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color: #666666;
+    margin: 0 0 0 15px;
+    padding: 10px;
+     i {
+       visibility: hidden;
+         @media screen and (max-width: $large) {
+           visibility: visible;
+           margin-left: -15px;
+       }
+      }
+
+    @media screen and (max-width: $medium) {
+        display: block;
+       }
+
+    &:first-child {
+      font-size: 18px;
+      font-weight: 400;
+      padding: 5px 0px;
+      color: $maindark;
+      min-width: 200px;
+      text-transform: none;
+      @media screen and (max-width: $large) {
+        display: block;
+       }
+
+      i {
+       visibility: visible;
+      }
+    }
+
+    &:last-child {
+
+      float: right;
+      @media screen and (max-width: $medium) {
+        float: left;
+       }
+      a {
+        background-color: $maincolor;
+        color: white;
+        padding: 10px;
+
+       &:hover, &:focus, &:after {
+          background-color: $maindark;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+

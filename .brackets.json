@@ -14,8 +14,11 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
-            "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe"
+            "linting.collapsed": true,
+            "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe",
+            "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe",
+            "useTabChar": false,
+            "spaceUnits": 2
         }
     }
 }
