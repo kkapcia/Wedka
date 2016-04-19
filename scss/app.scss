@@ -9,9 +9,24 @@ $fa: #fafafa;
 
 $small: 480px;
 $medium: 800px;
-$large: 1200px;
+$large: 1280px;
 
 // importowane
+
+// mixin
+@mixin li-base {
+    display: inline-block;
+    font-size: 12px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color: #666666;
+    margin: 0 0 0 15px;
+    padding: 10px 5px 10px 5px;
+    vertical-align: top;
+    max-width: 20%;
+    min-width: 20%;
+}
 
 //technology list
 
@@ -19,32 +34,33 @@ ul.technology {
   list-style: none;
   border-bottom: 2pt solid;
   border-color: $border;
-  padding-left: 5px;
+  padding: 10px;
+  background-color: $fa;
   @media screen and (max-width: $medium) {
-    background-color: $fa;
-    padding-bottom: 40px;
+  padding-bottom: 40px;
   }
 
-
   li {
-    display: inline-block;
-    font-size: 13px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	color: #666666;
-    margin: 0 0 0 15px;
-    padding: 10px;
+    @include li-base;
      i {
        visibility: hidden;
+       margin-left: -15px;
          @media screen and (max-width: $large) {
+           color: $maincolor;
            visibility: visible;
-           margin-left: -15px;
        }
       }
 
     @media screen and (max-width: $medium) {
-        display: block;
+      display: block;
+      text-align: left;
+      padding: 0 0 10px 0;
+      min-width: none;
+      max-width: none;
+       }
+    @media screen and (max-width: $large) {
+      min-width: 25%;
+      max-width: 25%;
        }
 
     &:first-child {
@@ -52,8 +68,9 @@ ul.technology {
       font-weight: 400;
       padding: 5px 0px;
       color: $maindark;
-      min-width: 200px;
       text-transform: none;
+      width: 200px;
+      min-width: 10%;
       @media screen and (max-width: $large) {
         display: block;
        }
@@ -66,13 +83,16 @@ ul.technology {
     &:last-child {
 
       float: right;
+      min-width: 10%;
       @media screen and (max-width: $medium) {
-        float: left;
-       }
+        padding-top: 10px;
+      }
       a {
         background-color: $maincolor;
         color: white;
         padding: 10px;
+        text-transform: uppercase;
+        vertical-align: middle;
 
        &:hover, &:focus, &:after {
           background-color: $maindark;
@@ -82,6 +102,34 @@ ul.technology {
       }
     }
   }
+  &.legend {
+    border: 2pt solid;
+    border-color: $border;
+    background-color: rgba(white, 0.8);
+    li {
+      @include li-base;
+      i {
+        visibility: visible;
+        color: #666666;
+        margin-left: 0px;
+      }
+      div {
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      &:first-child {
+        width: 200px;
+        min-width: 10%;
+      }
+      &:last-child {
+        min-width: 10%;
+      }
+    }
+  }
 }
 
+div.headlist {
+ }
 
