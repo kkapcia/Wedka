@@ -6,6 +6,7 @@ $maincolor: #ffa500;
 $maindark: darken($maincolor, 7%);
 $border: lighten(#666666, 40%);
 $fa: #fafafa;
+$granat: #181d3c;
 
 $small: 480px;
 $medium: 800px;
@@ -28,6 +29,20 @@ $large: 1280px;
     min-width: 20%;
 }
 
+@mixin media-base {
+    @media screen and (max-width: $medium) {
+      display: block;
+      text-align: left;
+      padding: 0 0 10px 0;
+      min-width: none;
+      max-width: none;
+       }
+    @media screen and (max-width: $large) {
+      min-width: 25%;
+      max-width: 25%;
+       }
+}
+
 //technology list
 
 ul.technology {
@@ -42,6 +57,7 @@ ul.technology {
 
   li {
     @include li-base;
+    @inculde media-base;
      i {
        visibility: hidden;
        margin-left: -15px;
@@ -51,17 +67,6 @@ ul.technology {
        }
       }
 
-    @media screen and (max-width: $medium) {
-      display: block;
-      text-align: left;
-      padding: 0 0 10px 0;
-      min-width: none;
-      max-width: none;
-       }
-    @media screen and (max-width: $large) {
-      min-width: 25%;
-      max-width: 25%;
-       }
 
     &:first-child {
       font-size: 18px;
@@ -102,22 +107,26 @@ ul.technology {
       }
     }
   }
-  &.legend {
+  &#sticky {
+
     border: 2pt solid;
-    border-color: $border;
-    background-color: rgba(white, 0.8);
+    border-color: $granat;
+    background-color: rgba($granat, 0.9);
     li {
       @include li-base;
+      @inculde media-base;
       i {
         visibility: visible;
         color: #666666;
         margin-left: 0px;
+        color: white;
       }
       div {
         font-size: 11px;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
+        color: white;
       }
       &:first-child {
         width: 200px;
@@ -130,6 +139,8 @@ ul.technology {
   }
 }
 
-div.headlist {
- }
 
+
+.fixed-header-on .header.fixed {
+  position: absolute;
+}
