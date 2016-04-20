@@ -15,7 +15,6 @@
 }
 
 // technology list
-
 ul.technology {
   list-style: none;
   border-bottom: 2pt solid;
@@ -74,7 +73,6 @@ ul.technology {
       @media screen and (max-width: $medium) {
         padding-top: 10px;
       }
-
       a {
         background-color: $maincolor;
         color: white;
@@ -91,7 +89,7 @@ ul.technology {
     }
   }
 
-  // ostylowanie legendy i zmiany
+  // ostylowanie ul dla legendy
   &.legend {
     border: 2pt solid;
     border-color: $granat;
@@ -153,7 +151,7 @@ ul.technology {
           max-width: none;
         }
         @media screen and (max-width: $small) {
-        display: none;
+          display: none;
         }
       }
     }
