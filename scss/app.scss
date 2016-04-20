@@ -2,18 +2,24 @@
 
 // zmienne
 
+// kolory
 $maincolor: #ffa500;
 $maindark: darken($maincolor, 7%);
 $border: lighten(#666666, 40%);
 $fa: #fafafa;
 $granat: #181d3c;
 
+// media
 $small: 640px;
 $medium: 800px;
 $large: 1280px;
 
-// importowane
+// importowane pliki czesciowe
 @import "tech-list";
+
+// filtry
+
+
 
 // pozostale zmiany w szablonie
 

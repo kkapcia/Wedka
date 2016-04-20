@@ -23,7 +23,7 @@ ul.technology {
   padding: 10px;
   background-color: $fa;
   @media screen and (max-width: $medium) {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   li {
@@ -32,8 +32,8 @@ ul.technology {
        visibility: hidden;
        margin-left: -15px;
        @media screen and (max-width: $large) {
-           color: $maincolor;
-           visibility: visible;
+         color: $maincolor;
+         visibility: visible;
        }
       }
 
@@ -44,7 +44,6 @@ ul.technology {
       min-width: 25%;
       max-width: 25%;
     }
-
     @media screen and (max-width: $small) {
       display: block;
       text-align: left;
@@ -52,7 +51,6 @@ ul.technology {
       min-width: none;
       max-width: none;
     }
-
 
     &:first-child {
       font-size: 18px;
@@ -65,19 +63,18 @@ ul.technology {
       @media screen and (max-width: $large) {
         display: block;
        }
-
       i {
        visibility: visible;
       }
     }
 
     &:last-child {
-
       float: right;
       min-width: 10%;
       @media screen and (max-width: $medium) {
         padding-top: 10px;
       }
+
       a {
         background-color: $maincolor;
         color: white;
@@ -96,7 +93,6 @@ ul.technology {
 
   // ostylowanie legendy i zmiany
   &.legend {
-
     border: 2pt solid;
     border-color: $granat;
     background-color: rgba($granat, 0.85);
@@ -111,7 +107,6 @@ ul.technology {
         letter-spacing: 0px;
       }
     }
-
     @media screen and (max-width: $small) {
       width: 100%;
       height: auto;
