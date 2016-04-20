@@ -21,7 +21,6 @@ $(document).ready(function() {
 
         var catcher = $('#catcher');
         var sticky = $('#sticky');
-        var footer = $('#footer');
 
         $(window).scroll(function() {
             if(isScrolledTo(sticky)) {
@@ -30,13 +29,8 @@ $(document).ready(function() {
             }
             var stopHeight = catcher.offset().top + catcher.height();
             if ( stopHeight > sticky.offset().top) {
-                sticky.css('position','absolute');
-                sticky.css('top',stopHeight);
-            }
-            var bottomStopHeight = footer.offset().top;
-			if ( bottomStopHeight < sticky.offset().top + sticky.height()) { // stop above footer
-                sticky.css('position','absolute');
-                sticky.css('top', bottomStopHeight - sticky.outerHeight() - 10); // a bit of padding
+                sticky.css('position','static');
+
             }
         });
     });
