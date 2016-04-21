@@ -92,8 +92,8 @@ ul.technology {
   // ostylowanie ul dla legendy
   &.legend {
     border: 2pt solid;
-    border-color: $granat;
-    background-color: rgba($granat, 0.85);
+    border-color: $maindark;
+    background-color: rgba($maindark, 0.9);
     width: 1140px;
 
     @media screen and (max-width: $large) {

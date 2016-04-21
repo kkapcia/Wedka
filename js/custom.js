@@ -34,3 +34,28 @@ $(document).ready(function() {
             }
         });
     });
+
+
+function toggle() {
+
+	var ele = document.getElementById("toggleFilter");
+
+	var text = document.getElementById("displayFilter");
+
+	if(ele.style.display == "block") {
+
+    		ele.style.display = "none";
+
+		text.innerHTML = "show filters";
+
+  	}
+
+	else {
+
+		ele.style.display = "block";
+
+		text.innerHTML = "hide filters";
+
+	}
+
+}
