@@ -284,6 +284,48 @@
 				<div class="container filter">
 					<h3>Filters</h3>
 
+                    <!-- medical technology modal -->
+                    <p class="filtername">Medical speciality</p><button class="btn btn-default btn-sm" data-toggle="modal" data-target=".bs-example-modal-lg">Choose</button>
+
+							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+											<h3 class="modal-title" id="myLargeModalLabel">Choose medical speciality</h3>
+										</div>
+										<div class="modal-body">
+											<p>You can choose more than one option:</p>
+                                            <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Allergology
+                                            </label>
+                                        </div>
+                                         <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Anaesthesiology & pain management
+                                            </label>
+                                        </div>
+                                        <div class="checkbox disabled">
+                                            <label>
+                                                <input type="checkbox" value="" disabled="">
+                                                Option disabled
+                                            </label>
+                                        </div>
+
+										</div>
+										<div class="modal-footer">
+
+                                            <button type="button" class="btn btn-sm btn-white">Clear all</button>
+											<button type="button" class="btn btn-sm btn-default">Apply</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                    <!-- medical technology modal end-->
+
 					<form role="form">
                         <div class="checkbox">
 							<label>
@@ -298,24 +340,6 @@
 							</label>
 						</div>
 						<br>
-						<div class="radio">
-							<label>
-								<input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked="">
-								Option one is this and that—be sure to include why it's great
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="optionsRadios" id="optionsRadios5" value="option2">
-								Option two can be something else and selecting it will deselect option one
-							</label>
-						</div>
-						<div class="radio disabled">
-							<label>
-								<input type="radio" name="optionsRadios" id="optionsRadios6" value="option3" disabled="">
-								Option three is disabled
-							</label>
-						</div>
                         <div>
                            <div class="switchblock">
                              <p class="filtername">Patents</p>
@@ -342,7 +366,7 @@
     						  </label>
                             </div>
                             <div class="switchblock">
-                              <p class="filtername">Need investors?</p>
+                              <p class="filtername">Need investor?</p>
                               <label class="switch">
                                 <input class="switch-input" type="checkbox" />
                                 <span class="switch-label" data-on="YES" data-off="NO"></span>
@@ -350,7 +374,7 @@
     						  </label>
                             </div>
                             <div class="switchblock">
-                              <p class="filtername">Need Distributior?</p>
+                              <p class="filtername">Need Distributor?</p>
                               <label class="switch">
                                 <input class="switch-input" type="checkbox" />
                                 <span class="switch-label" data-on="YES" data-off="NO"></span>

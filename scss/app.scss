@@ -43,23 +43,11 @@ $large: 1280px;
 .container.filter {
   max-width: 1100px;
   font-size: 13px;
-
-  .btn-default.btn-sm {
-    border: 1px solid;
-    border-color: $maindark;
-  }
-  .btn-white.btn-sm {
-    border: 1px solid;
-  &:hover, &:focus {
-    border-color: $maindark;
-  }
-}
-
 }
 
 .filtername {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 10px 5px 0;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11px;
@@ -75,12 +63,12 @@ $large: 1280px;
 }
 
 
-//switch
+// switch
 .switch {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	width: 105px;
+	width: 85px;
 	height: 30px;
 	padding: 3px;
 	margin: 0 10px 10px 0;
@@ -167,11 +155,11 @@ $large: 1280px;
   }
 }
 .switch-input:checked ~ .switch-handle {
-	left: 74px;
+	left: 54px;
 	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-// Transition
+// switch transition
 .switch-label, .switch-handle {
 	transition: All 0.3s ease;
 	-webkit-transition: All 0.3s ease;
@@ -179,12 +167,23 @@ $large: 1280px;
 	-o-transition: All 0.3s ease;
 }
 
-// pozostale zmiany w szablonie
 
+// pozostale zmiany w szablonie
 .fixed-header-on .header.fixed {
   position: absolute;
 }
 
 .scrollToTop {
   background-color: rgba(black, 0.3);
+}
+
+  .btn-default.btn-sm {
+    border: 1px solid;
+    border-color: $maindark;
+  }
+  .btn-white.btn-sm {
+    border: 1px solid;
+  &:hover, &:focus {
+    border-color: $maindark;
+  }
 }
