@@ -37,7 +37,6 @@ $large: 1280px;
     float: none;
     text-transform: uppercase;
   }
-
 }
 
 .container.filter {
@@ -47,21 +46,31 @@ $large: 1280px;
 
 .filtername {
   display: inline-block;
-  padding: 10px 10px 5px 0;
+  float: left;
+  padding: 10px 5px 5px 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin: 0px 0 10px;
   @media screen and (max-width: $small) {
     margin-bottom: 0px;
   }
 }
 
-.switchblock {
+.switchblock, .modalblock, .filterlistblock {
   display: inline-block;
+  .btn.btn-default.btn-sm {
+    margin-top: 0px;
+  }
 }
 
+.form-control.filterlist {
+  display: inline-block;
+  float: left;
+  width: auto;
+  min-width: 300px;
+}
 
 // switch
 .switch {
