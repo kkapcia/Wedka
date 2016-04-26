@@ -20,10 +20,34 @@ $large: 1280px;
 
 // technology details
 .tab-content {
+  width: 100%;
   h5 {
     text-align: left;
     font-size: 13px;
     color: $maindark;
+  }
+  @media screen and (max-width: $small) {
+    font-size: 13px;
+  }
+}
+
+.tab-pane.fade {
+  img {
+    padding: 0 0 15px 0;
+    max-width: 200px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+ .dates, %dates {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-right: 10px;
+ }
+ .answear {
+  @extend %dates;
+  font-weight: 800;
   }
 }
 
