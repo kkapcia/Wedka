@@ -88,6 +88,17 @@ $large: 1280px;
   }
 }
 
+// user-profile
+.stats.row {
+  .box-style-2 {
+    text-align: center;
+    padding: 10px;
+    i {
+      font-size: 42px;
+    }
+  }
+}
+
 // pozostale zmiany w szablonie
 .fixed-header-on .header.fixed {
   position: absolute;
@@ -116,3 +127,13 @@ $large: 1280px;
     }
   }
 }
+
+.list-inline {
+  img {
+    display: inline-block;
+  }
+  h2 {
+     padding-left: 10px;
+  }
+ }
+
