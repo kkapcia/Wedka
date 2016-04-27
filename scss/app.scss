@@ -33,8 +33,6 @@ $large: 1280px;
     color: $maindark;
   }
 }
-
-
 .result {
   margin-top: 20px;
   a {
@@ -90,7 +88,6 @@ $large: 1280px;
   }
 }
 
-
 // pozostale zmiany w szablonie
 .fixed-header-on .header.fixed {
   position: absolute;
@@ -108,5 +105,14 @@ $large: 1280px;
     border: 1px solid;
   &:hover, &:focus {
     border-color: $maindark;
+  }
+}
+
+.form-block.login {
+  .btn.btn-lg {
+    @media screen and (max-width: $small) {
+      min-width: 100px;
+      font-size: 13px;
+    }
   }
 }

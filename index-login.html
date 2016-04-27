@@ -6,7 +6,7 @@
 <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<title>iDea | Tables</title>
+		<title>iDea | Home No Slideshow</title>
 		<meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
 		<meta name="author" content="htmlcoder.me">
 
@@ -55,7 +55,7 @@
 			"boxed": boxed layout mode e.g. <body class="boxed">
 			"pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1">
 	-->
-	<body class="no-trans">
+	<body class="front no-trans">
 		<!-- scrollToTop -->
 		<!-- ================ -->
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
@@ -118,35 +118,15 @@
 										</ul>
 									</div>
 									<div class="btn-group dropdown">
-										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Login</button>
+										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> User Name</button>
 										<ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 											<li>
-												<form class="login-form">
-													<div class="form-group has-feedback">
-														<label class="control-label">Username</label>
-														<input type="text" class="form-control" placeholder="">
-														<i class="fa fa-user form-control-feedback"></i>
-													</div>
-													<div class="form-group has-feedback">
-														<label class="control-label">Password</label>
-														<input type="password" class="form-control" placeholder="">
-														<i class="fa fa-lock form-control-feedback"></i>
-													</div>
-													<button type="submit" class="btn btn-group btn-dark btn-sm">Log In</button>
+													<div>
+														<img src="images/avatar.jpg">
+                                                    </div>
+													<button class="btn btn-group btn-default btn-sm">Go to profile</button>
 													<span>or</span>
-													<button type="submit" class="btn btn-group btn-default btn-sm">Sign Up</button>
-
-													<ul>
-														<li><a href="#">Forgot your password?</a></li>
-													</ul>
-													<div class="divider"></div>
-													<span class="text-center">Login with</span>
-													<ul class="social-links clearfix">
-														<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-														<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-														<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-													</ul>
-												</form>
+													<button type="submit" class="btn btn-group btn-gray btn-sm">Log Out <i class="fa fa-sign-out"></i></button>
 											</li>
 										</ul>
 									</div>
@@ -228,6 +208,7 @@
 													<!-- mega-menu end -->
 													<!-- mega-menu start -->
 													<!-- mega-menu end -->
+
 												</ul>
 											</div>
 
@@ -247,111 +228,121 @@
 			</header>
 			<!-- header end -->
 
-			<!-- page-intro start-->
+			<!-- banner start -->
 			<!-- ================ -->
-			<div class="page-intro">
+			<div class="page-top parallax dark-translucent-bg parallax-bg-3"><!--section parallax light-translucent-bg parallax-bg-->
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="index-no-slideshow.html">Home</a></li>
-                                <li><a href="components-technologies.html">Technologies</a></li>
-								<li class="active">HeartFlow</li>
-							</ol>
+						<div class="col-md-6">
+							<!--<img src="images/section-image-5.png" alt="" class="object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="0">-->
+                            	<div class="form-block login">
+								<ul class="list-inline"><li><img src="images/avatar.jpg" style="display:inline-block"></li><li><h2 class="title"> Hello User!</h2></li></ul>
+								<hr>
+                                <p>What do you want to do?</p>
+                                <button type="submit" class="btn btn-group btn-default btn-lg">Create new technology</button>
+								<form class="form-horizontal">
+									<div class="form-group">
+										<div class=" col-sm-8">
+											<button type="submit" class="btn btn-group btn-default btn-sm">Go to profile</button>
+                                            <span>or</span>
+                                            <button type="submit" class="btn btn-group btn-gray btn-sm">Log out <i class="fa fa-sign-out"></i></button>
+										</div>
+									</div>
+								</form>
+                                <p>You can also <a href="mailto:someone@example.com?Subject=User Name invites you to join ScienceScanner" target="_top">invite your colleagues or co-workers</a> to join the platform.</p>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<br>
+							<h1 class="object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="200">Science Scanner</h1>
+							<br>
+							<div class="box-style-3 object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="400">
+								<div class="icon-container default-bg">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="body">
+									<h2>Free platform</h2>
+									<p>ScienceScanner is a free platform dedicated to life science innovators and inventors.</p>
+								</div>
+							</div>
+							<div class="box-style-3 object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="600">
+								<div class="icon-container default-bg">
+									<i class="fa fa-sitemap"></i>
+								</div>
+								<div class="body">
+									<h2>Innovative technologies</h2>
+									<p>It is a great place to show off ideas for innovative medical technologies.</p>
+								</div>
+							</div>
+							<div class="box-style-3 object-non-visible" data-animation-effect="fadeInRight" data-effect-delay="800">
+								<div class="icon-container default-bg">
+									<i class="fa fa-bicycle"></i>
+								</div>
+								<div class="body">
+									<h2>Organizations from all countries</h2>
+									<p>You can create profiles of technologies and link them with organisations and people who are undertaking R&D activities.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- page-intro end -->
+			<!-- banner end -->
 
-			<!-- main-container start -->
+			<!-- page-top start -->
 			<!-- ================ -->
-			<section class="main-container">
+			<div class="section parallax light-translucent-bg grey-bg">
 				<div class="container">
-					<div class="row">
-
-						<!-- main start -->
-						<!-- ================ -->
-						<div class="main col-md-12">
-                            <h3><i class="fa fa-heart pr-10"></i>HeartFlow</h3><p>added by <a href="user-profile-public.html">User Name</a></p>
-							<!-- Tabs start -->
-							<!-- ================ -->
-							<div class="vertical">
-								<!-- Nav tabs -->
-								<ul class="nav nav-tabs" role="tablist">
-									<li class="active"><a href="#vtab1" role="tab" data-toggle="tab"><i class="fa fa-medkit pr-10"></i> Intervention</a></li>
-									<li><a href="#vtab2" role="tab" data-toggle="tab"><i class="fa fa-stethoscope pr-10"></i> Indication</a></li>
-									<li><a href="#vtab3" role="tab" data-toggle="tab"><i class="fa fa-cogs pr-10"></i> Manufacturer</a></li>
-                                    <li><a href="#vtab4" role="tab" data-toggle="tab"><i class="fa fa-dollar pr-10"></i> Costs & Investestment</a></li>
-                                    <li><a href="#vtab5" role="tab" data-toggle="tab"><i class="fa fa-clipboard pr-10"></i> Market authorisation</a></li>
-								</ul>
-								<!-- Tab panes -->
-								<div class="tab-content">
-									<div class="tab-pane fade in active" id="vtab1">
-										<h5 class="text-center title">Technology type</h5>
-										<p>non-invasive medical devices</p>
-                                        <h5 class="text-center title">Intervention description - briefly </h5>
-										<p>non-invasive medical devices</p>
-										<h5 class="text-center title">Intervention description - detailed</h5>
-										<p>Software medical device that computes fractional flow reserve using standard coronary CT angiography images. Computer modeling program that provides a patient-specific analysis of coronary blood flow utilizing coronary computed tomography angiography (cCTA) scans and proprietary computer algorithms based on computational fluid dynamics; non-invasive, additional tool for clinicians who are considering the risks and benefits of invasive coronary procedures. Fractional flow reserve (FFR) is a pressure derived index of the maximal blood flow in a vessel with a stenosis expressed as a ratio of maximal blood flow in the same vessel in the absence of any stenosis. Image data, from a 64-slice or above cCTA scan, is sent securely using software installed on the local clinical imaging system to the HeartFlow central processing centre in Redwood City, California, USA. A HeartFlow case analyst uses CT images to create 3D computer models of the coronary arteries incorporating coronary flow characteristics. The results are presented in a report which is sent electronically to the referring clinician and includes 3D models of the coronary anatomy combined with functional information of the estimated FFR values (known as FFR-CT values). This information is designed to guide clinicians on management options for patients with coronary artery disease. HeartFlow FFR-CT is indicated for a non-invasive diagnosis of stable coronary artery disease. FFR-CT analysis is intended to support the functional evaluation of coronary artery disease.</p>
-
-									</div>
-									<div class="tab-pane fade" id="vtab2">
-										<h5 class="text-center title">Indication (ICD-10)</h5>
-										<p>Sepsis (ICD-10: A40-A41)</p>
-                                        <h5 class="text-center title">Indication - detailed</h5>
-										<p>Sex, age, others </p>
-                                        <h5 class="text-center title">Indication - full description </h5>
-										<p>Bacterial, fungal and viral infections. Infection is the invasion of an organism’s body tissues by disease-causing agents, their multiplication, and the reaction of host tissues to these organisms and toxins they produce. These disease-causing agents include bacteria, fungi and viruses.IRICICA platform can be useful in sepsis diagnosis, when fast diagnosis is crucial. Sepsis (ICD-10: A40-A41) is a whole-body inflammation caused by an infection. Sepsis occurs when chemicals released into the bloodstream to fight the infection trigger inflammatory responses throughout the body.The infection is most commonly by bacteria, but can also be by fungi, viruses, or parasites. Common locations for the primary infection include: lungs, brain, urinary tract, skin, and abdominal organs. Risk factors include young or old age, a weakened immune system from conditions such as cancer or diabetes, and major trauma or burns. This inflammation can trigger a cascade of changes that can damage multiple organ systems, causing them to fail. If sepsis progresses to septic shock, blood pressure drops dramatically, which may lead to death. Anyone can develop sepsis, but it's most common and most dangerous in older adults or those with weakened immune systems. Early treatment of sepsis, usually with antibiotics and large amounts of intravenous fluids, improves chances for survival.</p>
-									</div>
-									<div class="tab-pane fade" id="vtab3">
-										<h5 class="text-center title">Manufacturer</h5>
-										<p>GlaxoSmithKline</p>
-                                        <img src="images/Gsk_logo.svg.png">
-                                        <h5 class="text-center title">Contact</h5>
-										<ul>
-                                            <li><i class="fa fa-envelope pr-10"></i>inventor@gsk.com</li>
-                                            <li><i class="fa fa-map-marker pr-10"></i>ul. Grunwaldzka 189, 60-322 Poznań, <span>Polska</span></li>
-                                            <li><i class="fa fa-phone pr-10"></i>0 (61) 860 12 00</li>
-                                            <li><i class="fa fa-chain pr-10"></i><a href="http://www.gsk.com.pl/">Go to website</a></li>
-                                        </ul>
-									</div>
-									<div class="tab-pane fade" id="vtab4">
-										<h5 class="text-center title">Price of device</h5>
-										<p>25 000 USD</p>
-                                        <h5 class="text-center title">Investment needs</h5>
-										<p><i>Is the company looking for an investor?</i><br><span class="answear">yes</span></p>
-                                        <p><i>Size of the investment [USD]</i><br><span class="answear">10 000 000 USD</span></p>
-                                        <p><i>Investor’s location </i><br><span class="answear">Poland</span></p>
-                                        <p><i>Is the company looking for distributor?</i><br><span class="answear">YES</span></p>
-                                        <p><i>Distributor’s location </i><br><span class="answear">Poland</span></p>
-
-									</div>
-                                    <div class="tab-pane fade" id="vtab5">
-										<h5 class="text-center title">CE Mark</h5>
-                                        <!-- span dla dat z klasą "dates" ma przypisaną wartość display. Jeżeli odpowiedź jest NO, powinna się nie wyświetlać (zmiana wartości z normal na none) -->
-										<p><span class="answear">Yes</span><span style="display:normal" class="dates"><i class="fa fa-calendar-check-o pr-10"></i>2014/08/09</span></p>
-                                        <h5 class="text-center title">FDA</h5>
-										<p><span class="answear">No</span><span style="display:none" class="dates" ><i class="fa fa-calendar-check-o pr-10"></i>YYYY/MM/DD</span></p>
-
-                                    </div>
+					<div class="call-to-action">
+						<div class="row">
+							<div class="col-md-8">
+								<h1 class="title text-center">Join us, follow up ideas</h1>
+								<p class="text-center">Present your innovative health technology </p>
+							</div>
+							<div class="col-md-4">
+								<div class="text-center">
+									<a href="page-signup-ss.html" class="btn btn-default btn-lg">JOIN US</a>
 								</div>
 							</div>
-							<!-- tabs end -->
-
 						</div>
-						<!-- main end -->
-
 					</div>
 				</div>
-			</section>
-			<!-- main-container end -->
+			</div>
+			<!-- page-top end -->
+
+			<!-- section start -->
+			<!-- ================ -->
+			<div class="section clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Science Scanner</h2>
+							<div class="separator-2"></div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>Science Scanner gathers data about innovative medical projects and presents them in standardised, clear format. It allows, investors interested in investing in med-tech projects, to browse through technologies in R&D phases stored in one place.</p>
+									<p>ScienceScanner gives also opportunity for networking between inventors to and to share their ideas. It is possible to add colleagues to technologies you are working on. Also you can link technologies with organisations which were responsible for development of given project.</p>
+									<p>Science Scanner is designed and managed by <b>MedInvest Scanner</b> <a href="http://www.medinvestscanner.com" target="_blank">www.medinvestscanner.com</a> – the consultancy focused on innovative non-drug health technologies and health technology assessment. Its mission is to: identify innovations worth funding.</p>
+									<a href="page-about.html" class="btn btn-white">View More</a>
+									<div class="space hidden-md hidden-lg"></div>
+								</div>
+								<div class="col-md-6">
+									<img src="images/section-image-1.png" alt="">
+								</div>
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- section end -->
+
 
 
 			<!-- footer start (Add "light" class to #footer in order to enable light footer) -->
 			<!-- ================ -->
 			<footer id="footer">
-
 				<!-- .subfooter start -->
 				<!-- ================ -->
 				<div class="subfooter">
@@ -359,7 +350,8 @@
 						<div class="row">
 							<div class="col-md-6">
 								<p>Copyright © 2014 iDea by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>. All Rights Reserved</p>
-                            </div>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -374,7 +366,7 @@
 		<!-- JavaScript files placed at the end of the document so the pages load faster
 		================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="plugins/jquery.js"></script>
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
 		<!-- Modernizr javascript -->
@@ -391,9 +383,6 @@
 
 		<!-- Appear javascript -->
 		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
-
-		<!-- Sharrre javascript -->
-		<script type="text/javascript" src="plugins/jquery.sharrre.js"></script>
 
 		<!-- Count To javascript -->
 		<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
