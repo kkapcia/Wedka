@@ -18,6 +18,45 @@ $large: 1280px;
 @import "tech-list";
 @import "filters";
 
+// search results
+.search-panel {
+  background-color: $fa;
+  border: 1px solid $border;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 30px;
+
+  li {
+    padding-right: 20px;
+  }
+  .search_query {
+    color: $maindark;
+  }
+}
+
+
+.result {
+  margin-top: 20px;
+  a {
+    font-size: 11px;
+    color: #0f1b67;
+  }
+  .result-lead {
+    color: #0f1b67;
+    font-size: 16px;
+  }
+  p {
+    margin: 0 0 0 0;
+    &.context {
+      font-size: 13px;
+    }
+  }
+  mark {
+    background: $fa;
+    color: $maindark;
+  }
+}
+
 // technology details
 .tab-content {
   width: 100%;
