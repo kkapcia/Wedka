@@ -90,12 +90,24 @@ $large: 1280px;
 
 // user-profile
 .stats.row {
-  .box-style-2 {
+  .box-style-4 {
     text-align: center;
     padding: 10px;
     i {
-      font-size: 42px;
+      font-size: 36px;
     }
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+.edit {
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  &:hover, &:focus {
+    background: $maincolor;
+    color: white;
   }
 }
 
