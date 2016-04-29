@@ -59,3 +59,7 @@ function toggle() {
 	}
 
 }
+
+$(function () {
+    $('#datetimepicker1').datetimepicker();
+});

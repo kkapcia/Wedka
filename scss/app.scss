@@ -149,3 +149,25 @@ $large: 1280px;
   }
  }
 
+.colored {
+  color: $maindark;
+}
+
+.alert-info.tip {
+  color: #72412b;
+  background-color: rgb(255, 244, 218);
+  font-size: 11px;
+  ul {
+    list-style: disc;
+    padding-left: 10px;
+  }
+}
+
+.form-question {
+  display: inline-block;
+  float: left;
+  padding: 10px 5px 5px 10px;
+  @media screen and (max-width: $small) {
+    margin-bottom: 0px;
+  }
+}
