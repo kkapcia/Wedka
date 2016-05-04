@@ -18,6 +18,16 @@
     float: none;
     text-transform: uppercase;
   }
+  &.sort {
+    margin: 5px;
+    padding: 6px;
+    min-width: 40px;
+
+    @media screen and (max-width: $medium) {
+       display: block;
+      float: right;
+      }
+    }
 }
 
 .container.filter {

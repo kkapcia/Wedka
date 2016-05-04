@@ -254,6 +254,9 @@
 
                             <div class="col-lg-8 gray-bg">
                                 <h3 class="colored">Basic information*</h3>
+                                <div class="alert alert-info tip" role="alert">
+                                    *All information in this section are mandatory.
+                                </div>
                                 <form role="form">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Technology name</label>
@@ -321,12 +324,13 @@
                                     </div>
                                     <!-- medical technology modal end-->
                                 </form>
-                                <div class="alert alert-info tip" role="alert">
-                                    *All information in this section are mandatory.
-                                </div>
-                            </div>
 
+                            </div>
+                            <!-- Manufacturer details-->
                             <div class="col-lg-8 ">
+                           <div class="alert alert-info tip" role="alert">
+                                  <strong>Please note that all information in sections below are optional</strong>. However, the more information you will give, the more visible the technology will be after filtering.
+                                </div>
                                 <form role="form">
                                     <h3 class="colored">Manufacturer</h3>
                                     <div>
@@ -370,6 +374,37 @@
                                     </div>
                                 </form>
                             </div>
+                            <!-- Medical speciality details -->
+                            <div class="col-lg-8 ">
+                                <form role="form">
+                                    <h3 class="colored">Medical speciality</h3>
+                                    <div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Medical speciality 2</label>
+                                        <select class="form-control">
+                                            <option>choose</option>
+                                            <option>Allergology</option>
+                                            <option>Anaesthesiology & pain management</option>
+                                            <option>Angiology & vascular surgery</option>
+                                            <option>Audiology & phoniatrics</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </form>
+                                <div class="form-group">
+                                        <label for="exampleInputEmail1">Medical speciality 3</label>
+                                        <select class="form-control">
+                                            <option>choose</option>
+                                            <option>Allergology</option>
+                                            <option>Anaesthesiology & pain management</option>
+                                            <option>Angiology & vascular surgery</option>
+                                            <option>Audiology & phoniatrics</option>
+                                        </select>
+                                    </div>
+                            </div>
+
+
+                            <!-- Intervention -->
 
                             <div class="col-lg-8 ">
                                 <form role="form">
@@ -565,15 +600,14 @@
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Patents</label>
                                         <div>
-                                                <div class="switchblock">
-                                                    <p class="form-question">Are there any patents connected with this technology? </p>
-                                                    <label class="switch">
-                                                        <input class="switch-input" type="checkbox" />
-                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
-                                                        <span class="switch-handle"></span>
-                                                    </label>
-                                                </div>
+                                            <div class="switchblock">
+                                                <label class="switch">
+                                                    <input class="switch-input" type="checkbox" />
+                                                    <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                    <span class="switch-handle"></span>
+                                                </label>
                                             </div>
+                                        </div>
                                     </div>
                                     <div>
                                         <form role="form">
@@ -583,22 +617,65 @@
                                         <div class="alert alert-info tip" role="alert">
                                             <strong>Tips</strong>: patent number, title
                                         </div>
+                                        <div class="col-md-2">
+                                            <label for="exampleInputEmail1">FDA</label>
+                                            <div>
+                                                <div class="switchblock">
+                                                    <label class="switch">
+                                                        <input class="switch-input" type="checkbox" />
+                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label">Since when?</label>
+                                                <input type="text" name="date" value="10/24/1984" class="form-control"/>
+                                                <i class="fa fa-calendar form-control-feedback"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <label for="exampleInputEmail1">CE Mark</label>
+                                            <div>
+                                                <div class="switchblock">
+                                                    <label class="switch">
+                                                        <input class="switch-input" type="checkbox" />
+                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label">Since when?</label>
+                                                <input type="text" name="date" value="10/24/1984" class="form-control"/>
+                                                <i class="fa fa-calendar form-control-feedback"></i>
+                                            </div>
+                                        </div>
+
                                     </div>
+
+                                    <button type="button" class="btn btn-sm btn-white">Clear all</button>
+                                    <button type="button" class="btn btn-sm btn-default">Submit</button>
                                 </form>
 
                             </div>
-                                    </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-            </div>
         </section>
-        <!-- main-container end -->
+    </div>
+
+    <!-- main-container end -->
 
 
-
+    <div>
 
         <!-- footer start (Add "light" class to #footer in order to enable light footer) -->
         <!-- ================ -->
