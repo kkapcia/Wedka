@@ -456,21 +456,9 @@
                                                     <strong>Tips</strong>: shares in a company, ppportunity to buy project, opportunity to buy whole company
                                                 </div>
                                             </div>
-                                        </div>
-                                        <label for="exampleInputEmail1">Distribution needs</label>
-                                        <form role="form">
-                                            <div>
-                                                <div class="switchblock">
-                                                    <p class="form-question">Is the company looking for distributor? </p>
-                                                    <label class="switch">
-                                                        <input class="switch-input" type="checkbox" />
-                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
-                                                        <span class="switch-handle"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
+                                            <!-- okno modalne -->
                                             <div class="modalblock">
-                                                <label for="exampleInputEmail1">Distributor’s location</label>
+                                                <label for="exampleInputEmail1">Investor’s location</label>
                                                 <button class="btn btn-default btn-sm" data-toggle="modal" data-target=".bs-example-modal-lg">Choose</button>
 
                                                 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -481,7 +469,7 @@
                                                                 <h3 class="modal-title" id="myLargeModalLabel">Choose technology type</h3>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>You can choose continets or single countries:</p>
+                                                                <p>You can choose continets or countries:</p>
                                                                 <div class="checkbox">
                                                                     <label>
                                                                         <input type="checkbox" value=""> Africa
@@ -508,29 +496,103 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- data picker: https://eonasdan.github.io/bootstrap-datetimepicker/#view-mode -->
+                                            <!-- koniec okna -->
+                                            <hr>
+                                        </div>
+                                        <label for="exampleInputEmail1">Distribution needs</label>
+                                        <form role="form">
                                             <div>
-                                                <div>
-                                                    <div class="form-group">
-                                                        <div class='input-group date' id='datetimepicker1'>
-                                                            <input type='text' class="form-control" />
-                                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                            </span>
+                                                <div class="switchblock">
+                                                    <p class="form-question">Is the company looking for distributor? </p>
+                                                    <label class="switch">
+                                                        <input class="switch-input" type="checkbox" />
+                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- okno modalne -->
+                                            <div class="modalblock">
+                                                <label for="exampleInputEmail1">Distributor’s location</label>
+                                                <button class="btn btn-default btn-sm" data-toggle="modal" data-target=".bs-example-modal-lg">Choose</button>
+
+                                                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                <h3 class="modal-title" id="myLargeModalLabel">Choose technology type</h3>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>You can choose continets or countries:</p>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""> Africa
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""> America
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox disabled">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" disabled=""> Europe
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="modal-footer">
+
+                                                                <button type="button" class="btn btn-sm btn-white">Clear all</button>
+                                                                <button type="button" class="btn btn-sm btn-default">Apply</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-default btn-sm">Apply</button>
-                                            <button type="submit" class="btn btn-white btn-sm">Clear all</button>
+                                            <!-- koniec okna -->
                                         </form>
                                     </form>
+                                </form>
+
                             </div>
+                            <!-- Market authorisation -->
+
+                            <div class="col-lg-8 ">
+                                <form role="form">
+                                    <h3 class="colored">Market authorisation</h3>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Patents</label>
+                                        <div>
+                                                <div class="switchblock">
+                                                    <p class="form-question">Are there any patents connected with this technology? </p>
+                                                    <label class="switch">
+                                                        <input class="switch-input" type="checkbox" />
+                                                        <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                        <span class="switch-handle"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div>
+                                        <form role="form">
+                                            <label>Patents description</label>
+                                            <textarea class="form-control" rows="3" placeholder="e.g. US 8315812 B2, Method and system for patient-specific modeling of blood flow"></textarea>
+                                        </form>
+                                        <div class="alert alert-info tip" role="alert">
+                                            <strong>Tips</strong>: patent number, title
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                                    </div>
                         </div>
-                        <!-- main end -->
                     </div>
                 </div>
+            </div>
+    </div>
             </div>
         </section>
         <!-- main-container end -->
