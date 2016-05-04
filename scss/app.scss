@@ -37,10 +37,9 @@ $large: 1280px;
   margin-top: 20px;
   a {
     font-size: 11px;
-    color: #0f1b67;
   }
   .result-lead {
-    color: #0f1b67;
+    color: $maindark;
     font-size: 16px;
   }
   p {
@@ -85,6 +84,12 @@ $large: 1280px;
  .answear {
   @extend %dates;
   font-weight: 800;
+  }
+}
+
+.hc-tabs-top {
+  img {
+    max-height: 400px;
   }
 }
 
